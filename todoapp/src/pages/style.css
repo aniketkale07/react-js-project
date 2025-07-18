@@ -1,0 +1,109 @@
+/* Main container styling */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+/* Container for heading and form */
+.container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin-bottom: 2rem;
+}
+
+/* Heading styles */
+.heading h2 {
+  margin: 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Form styles */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Label */
+.form-container label {
+  font-weight: 500;
+}
+
+/* Input field */
+.form-container input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.form-container button,
+.list-container button {
+  padding: 0.4rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+/* Button hover effect */
+.form-container button:hover,
+.list-container button:hover {
+  background-color: #0056b3;
+}
+
+/* List container */
+.list-container {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+/* List styles */
+.list-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List items */
+.list-container li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Last item border removal */
+.list-container li:last-child {
+  border-bottom: none;
+}
+
+/* Edit input field */
+.list-container input[type="text"] {
+  flex: 1;
+  margin-right: 0.5rem;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Spacing between buttons */
+.list-container li > button + button {
+  margin-left: 0.5rem;
+}
